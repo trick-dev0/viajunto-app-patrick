@@ -10,6 +10,12 @@
   "scripts": {
     "test": "npm run test --workspace apps/backend",
     "lint": "npm run lint --workspace apps/backend",
-    "build": "npm run build --workspace packages/shared-types && npm run build --workspace apps/backend"
+    "build": "npm run build --workspace packages/shared-types && npm run build --workspace apps/backend",
+    "mobile": "npm run start --workspace @viajunto/mobile",
+    "mobile:web": "npm run web --workspace @viajunto/mobile",
+    "mobile:lint": "npm run lint --workspace @viajunto/mobile",
+    "mobile:typecheck": "npm run typecheck --workspace @viajunto/mobile",
+    "mobile:doctor": "npm run doctor --workspace @viajunto/mobile",
+    "mobile:export:web": "npm run export:web --workspace @viajunto/mobile"
   }
 }
